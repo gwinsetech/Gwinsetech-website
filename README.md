@@ -1,6 +1,6 @@
-# GWINSETECH - Company Website
+# GwinseTech - Company Website
 
-A modern, responsive one-page company website for GWINSETECH showcasing IT services, software development, cloud solutions, and technology services.
+A modern, responsive one-page company website for GwinseTech showcasing IT services, software development, cloud solutions, and technology services.
 
 ## Features
 
@@ -46,5 +46,5 @@ Simply open `company.html` in your web browser to view the website.
 
 ---
 
-© 2024 GWINSETECH. All rights reserved.
+© 2024 GwinseTech. All rights reserved.
 

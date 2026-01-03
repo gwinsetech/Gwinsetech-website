@@ -1,7 +1,7 @@
 {
   "name": "gwinsetech-website",
   "version": "1.0.0",
-  "description": "GWINSETECH Company Website",
+  "description": "GwinseTech Company Website",
   "main": "Default.html",
   "scripts": {
     "start": "echo 'Static site - no build needed'"
@@ -11,7 +11,7 @@
     "company",
     "static"
   ],
-  "author": "GWINSETECH",
+  "author": "GwinseTech",
   "license": "MIT"
 }
 
