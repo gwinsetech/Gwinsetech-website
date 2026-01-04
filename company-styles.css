@@ -853,11 +853,11 @@ body {
         left: -100%;
         top: 70px;
         flex-direction: column;
-        background: white;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         width: 100%;
         text-align: center;
         transition: 0.3s;
-        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.2);
         padding: 2rem 0;
     }
 
