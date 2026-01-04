@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Godwin Esu | Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      line-height: 1.6;
+      background: #f4f4f9;
+      color: #333;
+    }
+    header {
+      background: #2c3e50;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin: 0.5rem 0;
+      font-size: 1.2rem;
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: #2c3e50;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.5rem;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      background: #fff;
+      margin: 0.5rem 0;
+      padding: 0.8rem;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .contact {
+      text-align: center;
+      background: #2c3e50;
+      color: #fff;
+      padding: 1.5rem;
+    }
+    .contact a {
+      color: #1abc9c;
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #1abc9c;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Godwin Esu</h1>
+    <p>Backend Developer | Database Administrator | Aspiring AWS/Azure Cloud Engineer</p>
+    <p>Nigeria</p>
+    <p>Email: <a href="mailto:gwinsetech@gmail.com">gwinsetech@gmail.com</a> | Phone: +234-8032067857</p>
+  </header>
+
+  <section>
+    <h2>Professional Summary</h2>
+    <p>Backend-focused Cloud and Database Developer with 6 years of experience designing, developing, and deploying secure, scalable enterprise systems. Proven track record of delivering high-availability solutions supporting over 3,000 users. Strong expertise in AWS core services, RESTful API development, and relational database administration.</p>
+  </section>
+
+  <section>
+    <h2>Core Technical Skills</h2>
+    <ul>
+      <li><strong>Cloud & AWS:</strong> IAM, Identity Center, Organizations, VPC, EC2, Cloud Security</li>
+      <li><strong>Backend Development:</strong> Python (FastAPI), ASP.NET Core Web API, RESTful APIs, JWT, RBAC</li>
+      <li><strong>Database:</strong> PostgreSQL, MSSQL, schema design, query optimization, stored procedures</li>
+      <li><strong>Tools & Practices:</strong> Git/GitHub, IIS hosting, Agile/Scrum</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Professional Experience</h2>
+    <ul>
+      <li>Designed and deployed secure RESTful APIs using FastAPI and ASP.NET Core.</li>
+      <li>Developed and maintained PostgreSQL and MSSQL databases handling high-volume data.</li>
+      <li>Implemented RBAC and approval workflows for HR systems.</li>
+      <li>Prepared applications for AWS deployment with IAM policies.</li>
+      <li>Optimized backend performance, improving response times by 30%.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Key Projects</h2>
+    <ul>
+      <li><strong>Electronic Attendance Management System:</strong> Designed scalable backend and database for 3,000+ users, reducing manual processing by 60%.</li>
+      <li><strong>Timesheet & Leave Management System:</strong> Built workflows, APIs, and optimized DB performance, improving HR efficiency.</li>
+      <li><strong>Online Learning Management System:</strong> Developed backend with FastAPI and PostgreSQL, including quizzes, certificates, and dashboards.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Certifications</h2>
+    <ul>
+      <li>AWS Cloud Practitioner – In Progress</li>
+      <li>Azure Database Administrator Associate – In Progress</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Key Competencies</h2>
+    <ul>
+      <li>Analytical problem-solving & system design</li>
+      <li>Business process automation</li>
+      <li>Technical documentation</li>
+      <li>Cross-functional collaboration</li>
+      <li>Continuous learning mindset</li>
+    </ul>
+  </section>
+
+  <div class="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:gwinsetech@gmail.com">gwinsetech@gmail.com</a></p>
+    <p>Phone: +234-8032067857</p>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Godwin Esu. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

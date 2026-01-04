@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Godwin Esu | Full-Stack / AWS Developer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Animation for skill bars */
+    @keyframes fillBar {
+      from { width: 0%; }
+      to { width: var(--skill-level); }
+    }
+    .skill-fill {
+      animation: fillBar 2s ease-in-out forwards;
+    }
+
+    /* Sticky Navbar Shadow */
+    .nav-shadow {
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+   <!-- Header -->
+<header class="bg-white shadow-md p-6 text-center">
+  <h1 class="text-3xl font-bold">Godwin Esu</h1>
+  <p class="text-gray-600 mt-2">AWS Cloud Engineer | Backend Developer | Database Administrator</p>
+  <p class="text-gray-500 mt-1">
+    Nigeria | gwinsetech@gmail.com | +234-8032067857 |
+    <a href="#" class="text-blue-600">LinkedIn</a> |
+    <a href="#" class="text-blue-600">GitHub</a>
+  </p>
+</header>
+
+<!-- Spacer to separate header from main content -->
+<div class="h-6"></div>
+
+
+  <!-- Main Content -->
+  <main class="max-w-4xl mx-auto p-6">
+
+    <!-- Professional Summary -->
+    <section id="summary" class="mb-8">
+      <h2 class="text-xl font-semibold border-b-2 border-blue-600 inline-block pb-1 mb-3">Professional Summary</h2>
+      <p>
+        Backend-focused Cloud and Database Developer with 3 years of experience designing, developing, and deploying secure, scalable enterprise systems. Proven record of delivering high-availability solutions including Electronic Attendance, Timesheet, and Leave Management Systems supporting 3,000+ users. Strong expertise in AWS core services, RESTful API development, and relational database administration.
+      </p>
+    </section>
+
+    <!-- Skills with Animated Bars -->
+    <section id="skills" class="mb-8">
+      <h2 class="text-xl font-semibold border-b-2 border-blue-600 inline-block pb-1 mb-3">Core Technical Skills</h2>
+
+      <div class="mb-4">
+        <h3 class="font-bold mb-1">Cloud & AWS</h3>
+        <div class="w-full bg-gray-300 rounded-full h-4">
+          <div class="bg-blue-600 h-4 rounded-full skill-fill" style="--skill-level:90%"></div>
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <h3 class="font-bold mb-1">Backend Development</h3>
+        <div class="w-full bg-gray-300 rounded-full h-4">
+          <div class="bg-green-600 h-4 rounded-full skill-fill" style="--skill-level:85%"></div>
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <h3 class="font-bold mb-1">Database Administration</h3>
+        <div class="w-full bg-gray-300 rounded-full h-4">
+          <div class="bg-yellow-600 h-4 rounded-full skill-fill" style="--skill-level:90%"></div>
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <h3 class="font-bold mb-1">Tools & Practices</h3>
+        <div class="w-full bg-gray-300 rounded-full h-4">
+          <div class="bg-purple-600 h-4 rounded-full skill-fill" style="--skill-level:80%"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="mb-8">
+      <h2 class="text-xl font-semibold border-b-2 border-blue-600 inline-block pb-1 mb-3">Professional Experience</h2>
+      <div class="mb-4">
+        <h3 class="font-bold">Backend / Cloud Developer | Company Name – Location | Month Year – Present</h3>
+        <ul class="list-disc ml-5 mt-2">
+          <li>Designed and deployed secure RESTful APIs using FastAPI and ASP.NET Core.</li>
+          <li>Developed and maintained PostgreSQL and MSSQL databases for high-volume transactional data.</li>
+          <li>Implemented role-based access control and approval workflows for HR and operations systems.</li>
+          <li>Prepared applications for AWS deployment, configuring IAM users, roles, and least-privilege policies.</li>
+          <li>Optimized database queries and backend performance, improving response times by up to 30%.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="mb-8">
+      <h2 class="text-xl font-semibold border-b-2 border-blue-600 inline-block pb-1 mb-3">Key Projects</h2>
+      <div class="mb-4">
+        <h3 class="font-bold">Electronic Attendance Management System (EAMS) | ~3,000 Users</h3>
+        <ul class="list-disc ml-5 mt-2">
+          <li>Developed and deployed an enterprise system for real-time staff attendance using Wireless QR Code scanners.</li>
+          <li>Designed backend services with ASP.NET Core / FastAPI and scalable databases to handle 3,000+ users.</li>
+          <li>Reduced manual attendance processing by over 60% and improved reporting accuracy.</li>
+        </ul>
+      </div>
+      <div class="mb-4">
+        <h3 class="font-bold">Timesheet & Leave Management System</h3>
+        <ul class="list-disc ml-5 mt-2">
+          <li>Automated leave accrual, approvals, and timesheet tracking.</li>
+          <li>Built REST APIs and optimized database performance.</li>
+        </ul>
+      </div>
+      <div class="mb-4">
+        <h3 class="font-bold">Online Learning Management System (LMS)</h3>
+        <ul class="list-disc ml-5 mt-2">
+          <li>Built backend services using FastAPI and PostgreSQL.</li>
+          <li>Implemented quizzes, results computation, certificate PDF generation, and file uploads.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Education & Certifications -->
+    <section id="education" class="mb-8">
+      <h2 class="text-xl font-semibold border-b-2 border-blue-600 inline-block pb-1 mb-3">Education & Certifications</h2>
+      <p><strong>Degree / Certification | Institution Name – Year</strong></p>
+      <p><strong>Certifications:</strong> AWS Cloud Practitioner – In Progress / Planned</p>
+    </section>
+
+    <!-- Soft Skills -->
+    <section id="competencies" class="mb-8">
+      <h2 class="text-xl font-semibold border-b-2 border-blue-600 inline-block pb-1 mb-3">Key Competencies</h2>
+      <ul class="list-disc ml-5">
+        <li>Analytical problem-solving & system design</li>
+        <li>Business process automation</li>
+        <li>Technical documentation</li>
+        <li>Cross-functional collaboration</li>
+        <li>Continuous learning mindset</li>
+      </ul>
+    </section>
+
+    <!-- References -->
+    <section class="mb-8">
+      <h2 class="text-xl font-semibold border-b-2 border-blue-600 inline-block pb-1 mb-3">References</h2>
+      <p>Available upon request</p>
+    </section>
+
+  </main>
+
+  <footer class="bg-white shadow-inner p-4 text-center text-gray-500 text-sm">
+    &copy; 2025 Godwin Esu. All rights reserved.
+  </footer>
+
+</body>
+</html>

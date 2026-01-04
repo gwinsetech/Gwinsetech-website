@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Godwin Esu | Portfolio</title>
+  <style>
+    :root {
+      --primary: #1abc9c;
+      --secondary: #2c3e50;
+      --accent: #34495e;
+      --light: #ecf0f1;
+      --dark: #2d3436;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background: var(--secondary);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      margin: 0 1rem;
+    }
+    nav ul li a {
+      color: var(--light);
+      text-decoration: none;
+      font-weight: bold;
+      padding: 1rem;
+      transition: color 0.3s, background 0.3s;
+    }
+    nav ul li a:hover {
+      color: var(--primary);
+      background: var(--accent);
+      border-radius: 5px;
+    }
+
+    header {
+      background: var(--primary);
+      color: #fff;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+    }
+    header p {
+      margin: 0.5rem 0;
+      font-size: 1.2rem;
+    }
+
+header {
+  background: linear-gradient(135deg, #1abc9c, #16a085);
+  color: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-bottom: 4px solid #2c3e50;
+}
+
+.header-content {
+  max-width: 800px;
+  margin: auto;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+header h3 {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+header .location {
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+  font-style: italic;
+}
+
+header .contact {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+}
+
+header .contact a {
+  color: #f1c40f;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+header .contact a:hover {
+  text-decoration: underline;
+}
+
+
+
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: var(--secondary);
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 0.5rem;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      background: #fff;
+      margin: 0.5rem 0;
+      padding: 0.8rem;
+      border-radius: 5px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .contact {
+      text-align: center;
+      background: var(--accent);
+      color: #fff;
+      padding: 2rem;
+    }
+    .contact a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: var(--secondary);
+      color: #fff;
+    }
+
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#summary">Summary</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header>
+  <div class="header-content">
+    <h1>Godwin Esu</h1>
+    <h3>Backend Developer | Database Administrator | Aspiring AWS/Azure Cloud Engineer</h3>
+    <p class="location">📍 Nigeria</p>
+    <p class="contact">
+      <a href="mailto:gwinsetech@gmail.com">gwinsetech@gmail.com</a> | 
+      <span>+234-8032067857</span>
+    </p>
+  </div>
+</header>
+
+
+  <!-- Sections -->
+  <section id="summary">
+    <h2>Professional Summary</h2>
+    <p>Backend-focused Cloud and Database Developer with 6 years of experience designing, developing, and deploying secure, scalable enterprise systems. Proven track record of delivering high-availability solutions supporting over 3,000 users. Strong expertise in AWS core services, RESTful API development, and relational database administration.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Core Technical Skills</h2>
+    <ul>
+      <li><strong>Cloud & AWS:</strong> IAM, Identity Center, Organizations, VPC, EC2, Cloud Security</li>
+      <li><strong>Backend Development:</strong> Python (FastAPI), ASP.NET Core Web API, RESTful APIs, JWT, RBAC</li>
+      <li><strong>Database:</strong> PostgreSQL, MSSQL, schema design, query optimization, stored procedures</li>
+      <li><strong>Tools & Practices:</strong> Git/GitHub, IIS hosting, Agile/Scrum</li>
+    </ul>
+  </section>
+
+  <section id="experience">
+    <h2>Professional Experience</h2>
+    <ul>
+      <li>Designed and deployed secure RESTful APIs using FastAPI and ASP.NET Core.</li>
+      <li>Developed and maintained PostgreSQL and MSSQL databases handling high-volume data.</li>
+      <li>Implemented RBAC and approval workflows for HR systems.</li>
+      <li>Prepared applications for AWS deployment with IAM policies.</li>
+      <li>Optimized backend performance, improving response times by 30%.</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Key Projects</h2>
+    <ul>
+      <li><strong>Electronic Attendance Management System:</strong> Designed scalable backend and database for 3,000+ users, reducing manual processing by 60%.</li>
+      <li><strong>Timesheet & Leave Management System:</strong> Built workflows, APIs, and optimized DB performance, improving HR efficiency.</li>
+      <li><strong>Online Learning Management System:</strong> Developed backend with FastAPI and PostgreSQL, including quizzes, certificates, and dashboards.</li>
+    </ul>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li>AWS Cloud Practitioner – In Progress</li>
+      <li>Azure Database Administrator Associate – In Progress</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <div class="contact" id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:gwinsetech@gmail.com">gwinsetech@gmail.com</a></p>
+    <p>Phone: +234-8032067857</p>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Godwin Esu. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
