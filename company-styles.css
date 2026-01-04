@@ -28,9 +28,9 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.95);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     backdrop-filter: blur(10px);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     z-index: 1000;
     transition: all 0.3s ease;
 }
@@ -47,16 +47,13 @@ body {
 .logo h1 {
     font-size: 1.8rem;
     font-weight: 800;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: white;
     margin-bottom: 0;
 }
 
 .tagline {
     font-size: 0.75rem;
-    color: #666;
+    color: rgba(255, 255, 255, 0.8);
     font-weight: 500;
     display: block;
     margin-top: -5px;
@@ -70,7 +67,7 @@ body {
 
 .nav-menu a {
     text-decoration: none;
-    color: #333;
+    color: white;
     font-weight: 500;
     transition: color 0.3s ease;
     position: relative;
@@ -88,7 +85,7 @@ body {
 }
 
 .nav-menu a:hover {
-    color: #667eea;
+    color: #ffd700;
 }
 
 .nav-menu a:hover::after {
@@ -136,7 +133,7 @@ body {
     background: rgba(255, 255, 255, 0.3);
     border-radius: 50px;
     opacity: 0.4;
-    animation: float 20s infinite ease-in-out;
+    animation: moveLeftToRight 25s infinite linear;
 }
 
 .cloud::before,
@@ -151,7 +148,7 @@ body {
     width: 100px;
     height: 40px;
     top: 20%;
-    left: 10%;
+    left: 0;
     animation-delay: 0s;
 }
 
@@ -173,8 +170,8 @@ body {
     width: 120px;
     height: 50px;
     top: 60%;
-    right: 15%;
-    animation-delay: -5s;
+    left: 0;
+    animation-delay: -8s;
 }
 
 .cloud2::before {
@@ -195,8 +192,8 @@ body {
     width: 80px;
     height: 35px;
     top: 40%;
-    left: 70%;
-    animation-delay: -10s;
+    left: 0;
+    animation-delay: -15s;
 }
 
 .cloud3::before {
@@ -213,15 +210,12 @@ body {
     right: 10px;
 }
 
-@keyframes float {
-    0%, 100% {
-        transform: translateY(0) translateX(0);
+@keyframes moveLeftToRight {
+    0% {
+        transform: translateX(-150px);
     }
-    33% {
-        transform: translateY(-20px) translateX(10px);
-    }
-    66% {
-        transform: translateY(10px) translateX(-10px);
+    100% {
+        transform: translateX(calc(100vw + 150px));
     }
 }
 
@@ -230,13 +224,13 @@ body {
     position: absolute;
     background: rgba(255, 255, 255, 0.2);
     height: 2px;
-    animation: pulse 3s infinite ease-in-out;
+    animation: moveLeftToRightLine 20s infinite linear;
 }
 
 .line1 {
     width: 150px;
     top: 30%;
-    left: 20%;
+    left: 0;
     transform: rotate(25deg);
     animation-delay: 0s;
 }
@@ -244,27 +238,30 @@ body {
 .line2 {
     width: 120px;
     top: 50%;
-    right: 25%;
+    left: 0;
     transform: rotate(-30deg);
-    animation-delay: -1s;
+    animation-delay: -6s;
 }
 
 .line3 {
     width: 100px;
     top: 70%;
-    left: 60%;
+    left: 0;
     transform: rotate(45deg);
-    animation-delay: -2s;
+    animation-delay: -12s;
 }
 
-@keyframes pulse {
-    0%, 100% {
+@keyframes moveLeftToRightLine {
+    0% {
+        transform: translateX(-200px) rotate(25deg);
         opacity: 0.2;
-        transform: scaleX(1);
     }
     50% {
         opacity: 0.4;
-        transform: scaleX(1.1);
+    }
+    100% {
+        transform: translateX(calc(100vw + 200px)) rotate(25deg);
+        opacity: 0.2;
     }
 }
 
@@ -273,41 +270,45 @@ body {
     position: absolute;
     color: rgba(255, 255, 255, 0.25);
     font-size: 2rem;
-    animation: fadeInOut 4s infinite ease-in-out;
+    animation: moveLeftToRightIcon 18s infinite linear;
 }
 
 .icon1 {
     top: 25%;
-    left: 15%;
+    left: 0;
     animation-delay: 0s;
 }
 
 .icon2 {
     top: 45%;
-    right: 20%;
-    animation-delay: -1s;
+    left: 0;
+    animation-delay: -4s;
 }
 
 .icon3 {
     top: 65%;
-    left: 25%;
-    animation-delay: -2s;
+    left: 0;
+    animation-delay: -8s;
 }
 
 .icon4 {
     top: 35%;
-    right: 30%;
-    animation-delay: -1.5s;
+    left: 0;
+    animation-delay: -12s;
 }
 
-@keyframes fadeInOut {
-    0%, 100% {
+@keyframes moveLeftToRightIcon {
+    0% {
+        transform: translateX(-100px) scale(0.8);
         opacity: 0.15;
-        transform: scale(0.9);
     }
     50% {
         opacity: 0.3;
-        transform: scale(1.1);
+        transform: translateX(calc(50vw - 50px)) scale(1.1);
+    }
+    100% {
+        transform: translateX(calc(100vw + 100px)) scale(0.8);
+        opacity: 0.15;
     }
 }
 
