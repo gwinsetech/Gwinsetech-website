@@ -13,6 +13,8 @@ body {
     line-height: 1.6;
     color: #333;
     overflow-x: hidden;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
 }
 
 .container {
@@ -117,22 +119,203 @@ body {
     overflow: hidden;
 }
 
-.hero::before {
-    content: '';
+.hero-background {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M 100 0 L 0 0 0 100" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/></svg>');
-    opacity: 0.3;
+    opacity: 0.15;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Cloud Animation */
+.cloud {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    opacity: 0.4;
+    animation: float 20s infinite ease-in-out;
+}
+
+.cloud::before,
+.cloud::after {
+    content: '';
+    position: absolute;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+}
+
+.cloud1 {
+    width: 100px;
+    height: 40px;
+    top: 20%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.cloud1::before {
+    width: 50px;
+    height: 50px;
+    top: -25px;
+    left: 10px;
+}
+
+.cloud1::after {
+    width: 60px;
+    height: 40px;
+    top: -15px;
+    right: 10px;
+}
+
+.cloud2 {
+    width: 120px;
+    height: 50px;
+    top: 60%;
+    right: 15%;
+    animation-delay: -5s;
+}
+
+.cloud2::before {
+    width: 60px;
+    height: 60px;
+    top: -30px;
+    left: 15px;
+}
+
+.cloud2::after {
+    width: 70px;
+    height: 50px;
+    top: -20px;
+    right: 15px;
+}
+
+.cloud3 {
+    width: 80px;
+    height: 35px;
+    top: 40%;
+    left: 70%;
+    animation-delay: -10s;
+}
+
+.cloud3::before {
+    width: 40px;
+    height: 40px;
+    top: -20px;
+    left: 10px;
+}
+
+.cloud3::after {
+    width: 50px;
+    height: 35px;
+    top: -15px;
+    right: 10px;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0) translateX(0);
+    }
+    33% {
+        transform: translateY(-20px) translateX(10px);
+    }
+    66% {
+        transform: translateY(10px) translateX(-10px);
+    }
+}
+
+/* Connection Lines */
+.connection-line {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.2);
+    height: 2px;
+    animation: pulse 3s infinite ease-in-out;
+}
+
+.line1 {
+    width: 150px;
+    top: 30%;
+    left: 20%;
+    transform: rotate(25deg);
+    animation-delay: 0s;
+}
+
+.line2 {
+    width: 120px;
+    top: 50%;
+    right: 25%;
+    transform: rotate(-30deg);
+    animation-delay: -1s;
+}
+
+.line3 {
+    width: 100px;
+    top: 70%;
+    left: 60%;
+    transform: rotate(45deg);
+    animation-delay: -2s;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 0.2;
+        transform: scaleX(1);
+    }
+    50% {
+        opacity: 0.4;
+        transform: scaleX(1.1);
+    }
+}
+
+/* Tech Icons */
+.tech-icon {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.25);
+    font-size: 2rem;
+    animation: fadeInOut 4s infinite ease-in-out;
+}
+
+.icon1 {
+    top: 25%;
+    left: 15%;
+    animation-delay: 0s;
+}
+
+.icon2 {
+    top: 45%;
+    right: 20%;
+    animation-delay: -1s;
+}
+
+.icon3 {
+    top: 65%;
+    left: 25%;
+    animation-delay: -2s;
+}
+
+.icon4 {
+    top: 35%;
+    right: 30%;
+    animation-delay: -1.5s;
+}
+
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0.15;
+        transform: scale(0.9);
+    }
+    50% {
+        opacity: 0.3;
+        transform: scale(1.1);
+    }
 }
 
 .hero-content {
     max-width: 900px;
     margin: 0 auto;
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 .hero-title {
