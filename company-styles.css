@@ -110,20 +110,6 @@ body {
     color: white !important;
 }
 
-/* URL Bar */
-.url-bar {
-    background: #f5f5f5;
-    padding: 8px 0;
-    text-align: center;
-    border-bottom: 1px solid #e0e0e0;
-}
-
-.url-bar span {
-    color: #666;
-    font-size: 0.9rem;
-    font-weight: 500;
-}
-
 /* Hero Section - Dark Gray Background */
 .hero {
     background: #2d3748;
