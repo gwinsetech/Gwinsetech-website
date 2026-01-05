@@ -48,9 +48,12 @@ body {
 }
 
 .logo-image {
-    height: 50px;
+    height: 70px;
     width: auto;
     object-fit: contain;
+    mix-blend-mode: screen;
+    filter: brightness(1.2) contrast(1.1);
+    background: transparent;
 }
 
 .nav-menu {
