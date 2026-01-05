@@ -10,105 +10,48 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Top Header -->
-    <header class="top-header">
-        <div class="header-container">
-            <div class="logo-container">
-                <div class="logo-icon">
-                    <svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
-                        <!-- Hexagon -->
-                        <polygon points="25,5 40,12.5 40,37.5 25,45 10,37.5 10,12.5" fill="none" stroke="#667eea" stroke-width="1.5"/>
-                        <!-- Letter G with gradient -->
-                        <path d="M 25 15 L 30 15 Q 35 15 35 20 L 35 25 Q 35 30 30 30 L 25 30 L 25 27 L 30 27 Q 32 27 32 25 L 32 20 Q 32 18 30 18 L 25 18 Z" fill="url(#gGradient)"/>
-                        <defs>
-                            <linearGradient id="gGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
-                                <stop offset="50%" style="stop-color:#764ba2;stop-opacity:1" />
-                                <stop offset="100%" style="stop-color:#4ade80;stop-opacity:1" />
-                            </linearGradient>
-                        </defs>
-                        <!-- Circuit traces -->
-                        <circle cx="5" cy="15" r="2" fill="#667eea"/>
-                        <line x1="7" y1="15" x2="10" y2="15" stroke="#667eea" stroke-width="1"/>
-                        <circle cx="45" cy="35" r="2" fill="#764ba2"/>
-                        <line x1="43" y1="35" x2="40" y2="35" stroke="#764ba2" stroke-width="1"/>
-                    </svg>
-                </div>
-                <div class="logo-text">
-                    <span class="logo-gwinse">Gwinse</span><span class="logo-tech">Tech</span>
-                </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>GwinseTech</h1>
+                <span class="tagline">Technology Solutions</span>
             </div>
-            <nav class="top-nav">
-                <a href="#home">Home</a>
-                <a href="#solutions">Solutions</a>
-                <a href="#services">Services</a>
-                <a href="#contact">Contact</a>
-                <a href="#contact" class="btn-quote">Get a Quote</a>
-            </nav>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-    </header>
+    </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-header">
-            <div class="hero-logo">
-                <div class="logo-icon">
-                    <svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
-                        <polygon points="25,5 40,12.5 40,37.5 25,45 10,37.5 10,12.5" fill="none" stroke="#fff" stroke-width="1.5"/>
-                        <path d="M 25 15 L 30 15 Q 35 15 35 20 L 35 25 Q 35 30 30 30 L 25 30 L 25 27 L 30 27 Q 32 27 32 25 L 32 20 Q 32 18 30 18 L 25 18 Z" fill="url(#gGradient2)"/>
-                        <defs>
-                            <linearGradient id="gGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
-                                <stop offset="50%" style="stop-color:#764ba2;stop-opacity:1" />
-                                <stop offset="100%" style="stop-color:#4ade80;stop-opacity:1" />
-                            </linearGradient>
-                        </defs>
-                        <circle cx="5" cy="15" r="2" fill="#fff"/>
-                        <line x1="7" y1="15" x2="10" y2="15" stroke="#fff" stroke-width="1"/>
-                        <circle cx="45" cy="35" r="2" fill="#fff"/>
-                        <line x1="43" y1="35" x2="40" y2="35" stroke="#fff" stroke-width="1"/>
-                    </svg>
-                </div>
-                <div class="logo-text">
-                    <span class="logo-gwinse">Gwinse</span><span class="logo-tech">Tech</span>
-                </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Empowering Businesses with <span class="highlight">Cutting-Edge Technology</span></h1>
+            <p class="hero-subtitle">Comprehensive IT solutions, software development, cloud services, and hardware solutions tailored to your needs</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Get Started</a>
+                <a href="#services" class="btn btn-secondary">Our Services</a>
             </div>
-            <nav class="hero-nav">
-                <a href="#home" class="active">Home</a>
-                <a href="#solutions">Solutions</a>
-                <a href="#about">About Us</a>
-                <a href="#contact">Contact</a>
-                <a href="#contact" class="btn-soup">Soup</a>
-            </nav>
-        </div>
-        <div class="hero-content-wrapper">
-            <div class="hero-text">
-                <h1 class="hero-title">
-                    <span class="title-gwinse">Gwinse</span> <span class="title-tech">Tech</span>
-                </h1>
-                <p class="hero-description">
-                    Empowering businesses with cutting-edge technology solutions. We specialize in software development, cloud infrastructure, and comprehensive IT services tailored to your needs.
-                </p>
-                <a href="#contact" class="btn-hero">Get Started</a>
-            </div>
-            <div class="hero-image">
-                <div class="laptop-container">
-                    <div class="laptop-screen">
-                        <div class="screen-content">
-                            <div class="data-center-view">
-                                <div class="monitor-row">
-                                    <div class="monitor"></div>
-                                    <div class="monitor"></div>
-                                    <div class="monitor"></div>
-                                </div>
-                                <div class="desk-row">
-                                    <div class="desk"></div>
-                                    <div class="desk"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="laptop-base"></div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="6" data-suffix="+">0</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="3000" data-suffix="+">0</div>
+                    <div class="stat-label">Users Served</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="100" data-suffix="+">0</div>
+                    <div class="stat-label">Projects Completed</div>
                 </div>
             </div>
         </div>
@@ -272,6 +215,43 @@
         </div>
     </section>
 
+    <!-- Why Choose Us -->
+    <section class="why-us">
+        <div class="container">
+            <h2 class="section-title">Why Choose GwinseTech?</h2>
+            <div class="why-grid">
+                <div class="why-item">
+                    <div class="why-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Fast Delivery</h3>
+                    <p>Efficient project execution with timely delivery of solutions</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Secure & Reliable</h3>
+                    <p>Enterprise-grade security and reliable infrastructure</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Expert Team</h3>
+                    <p>Experienced professionals with proven expertise</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock support for your business needs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
@@ -398,12 +378,18 @@
         const hamburger = document.querySelector('.hamburger');
         const navMenu = document.querySelector('.nav-menu');
 
-        if (hamburger && navMenu) {
-            hamburger.addEventListener('click', () => {
-                hamburger.classList.toggle('active');
-                navMenu.classList.toggle('active');
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
             });
-        }
+        });
 
         // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -420,14 +406,60 @@
         });
 
         // Form submission
-        const contactForm = document.getElementById('contactForm');
-        if (contactForm) {
-            contactForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                alert('Thank you for your message! We will get back to you soon.');
-                this.reset();
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // In a real application, you would send this data to a server
+            alert('Thank you for your message! We will get back to you soon.');
+            this.reset();
+        });
+
+        // Counter Animation
+        function animateCounter(element) {
+            const target = parseInt(element.getAttribute('data-target'));
+            const suffix = element.getAttribute('data-suffix') || '';
+            const duration = 2000; // 2 seconds
+            const increment = target / (duration / 16); // 60fps
+            let current = 0;
+
+            const updateCounter = () => {
+                current += increment;
+                if (current < target) {
+                    element.textContent = Math.floor(current) + suffix;
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    element.textContent = target + suffix;
+                }
+            };
+
+            updateCounter();
+        }
+
+        // Intersection Observer to trigger animation when stats come into view
+        const observerOptions = {
+            threshold: 0.5,
+            rootMargin: '0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const statNumbers = entry.target.querySelectorAll('.stat-number');
+                    statNumbers.forEach((stat, index) => {
+                        setTimeout(() => {
+                            animateCounter(stat);
+                        }, index * 200); // Stagger the animations
+                    });
+                    observer.unobserve(entry.target);
+                }
             });
+        }, observerOptions);
+
+        // Observe the hero stats section
+        const heroStats = document.querySelector('.hero-stats');
+        if (heroStats) {
+            observer.observe(heroStats);
         }
     </script>
 </body>
 </html>
+
