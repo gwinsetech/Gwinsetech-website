@@ -440,11 +440,11 @@ body {
 }
 
 .why-us .section-title {
-    color: white;
+    color: #2d3748;
 }
 
 .why-us .section-title::after {
-    background: white;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #4ade80 100%);
 }
 
 .why-grid {
@@ -472,13 +472,14 @@ body {
 .why-icon {
     width: 80px;
     height: 80px;
-    background: rgba(255, 255, 255, 0.2);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #4ade80 100%);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto 1.5rem;
     font-size: 2rem;
+    color: white;
 }
 
 .why-item h3 {
