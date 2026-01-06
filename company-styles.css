@@ -57,7 +57,7 @@ body {
 
 .logo-motto {
     font-size: 0.85rem;
-    color: rgba(255, 255, 255, 0.9);
+    color: #666;
     font-weight: 500;
     letter-spacing: 0.5px;
     margin-left: 8px;
@@ -106,7 +106,7 @@ body {
 .hamburger span {
     width: 25px;
     height: 3px;
-    background: #333;
+    background: rgba(255, 255, 255, 0.9);
     transition: all 0.3s ease;
 }
 
