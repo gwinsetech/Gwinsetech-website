@@ -71,7 +71,7 @@ body {
 
 .nav-menu a {
     text-decoration: none;
-    color: #333;
+    color: #2d3748;
     font-weight: 500;
     transition: color 0.3s ease;
     position: relative;
@@ -112,8 +112,8 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #4ade80 100%);
-    color: white;
+    background: #ffffff;
+    color: #2d3748;
     padding: 150px 20px 100px;
     text-align: center;
     position: relative;
@@ -143,6 +143,7 @@ body {
     font-weight: 800;
     margin-bottom: 1.5rem;
     line-height: 1.2;
+    color: #2d3748;
 }
 
 .highlight {
@@ -153,7 +154,7 @@ body {
 .hero-subtitle {
     font-size: 1.3rem;
     margin-bottom: 2.5rem;
-    opacity: 0.95;
+    color: #666;
     line-height: 1.6;
 }
 
@@ -192,15 +193,16 @@ body {
 
 .btn-secondary {
     background: transparent;
-    color: white;
-    border-color: white;
+    color: #667eea;
+    border: 2px solid #667eea;
 }
 
 .btn-secondary:hover {
-    background: white;
-    color: #667eea;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #4ade80 100%);
+    color: white;
+    border-color: transparent;
     transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
 }
 
 .btn-block {
@@ -433,8 +435,8 @@ body {
 /* Why Us Section */
 .why-us {
     padding: 100px 20px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #4ade80 100%);
-    color: white;
+    background: #f8f9fa;
+    color: #2d3748;
 }
 
 .why-us .section-title {
@@ -455,14 +457,15 @@ body {
 .why-item {
     text-align: center;
     padding: 2rem;
-    background: rgba(255, 255, 255, 0.1);
+    background: #ffffff;
     border-radius: 15px;
-    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
     transition: all 0.3s ease;
 }
 
 .why-item:hover {
-    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
     transform: translateY(-5px);
 }
 
@@ -481,10 +484,11 @@ body {
 .why-item h3 {
     font-size: 1.3rem;
     margin-bottom: 1rem;
+    color: #2d3748;
 }
 
 .why-item p {
-    opacity: 0.9;
+    color: #666;
     line-height: 1.6;
 }
 
